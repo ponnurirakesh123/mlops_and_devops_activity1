@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html >
+<body><script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=9RzPP7vRsBbN-oOJVO01qHOaIUEIre61CfEJIAJEjwpHMFaYNYv6W63LiV-KVsSi3xVqH86yzSoAy8s4Ye0LjLUVjahHO9doWW3xTnKw6etXtqTgYBHa2RmBSZ1pL7K9N1fDZgcL1JDQM8XEUeZEtEUhOB47n6sIaYyuZgRaAbN4P8BPmb8b5kLUd-8chX8hwzvr5zrXRj6s6V1aWVZ_K759DW9uG-Hpe_TOKtkkS1_XUw5h0Yznua67kFNrovVf" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9pbGFiOTc5OC5pbnNvZmUuY29tL3VzZXIvNTI4NmIxMjQvZmlsZXMvMjMwMzA5X0JhbmtfTm90ZV9BdXRoZW50aWNhdGlvbl8wMS90ZW1wbGF0ZS9CYW5rTm90ZS5odG1sP194c3JmPTJ8ZDM1MjdlZjV8YTY2YTk0MjJhZWQxZDJjZGJiNmIzNzEyNjJkMDAyZjV8MTY3ODM1NDIzNA"/>
+ <div class="login">
+	<h1>Bank Note Authentication Classification</h1>
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="number" name="Variance" placeholder="Variance Number" required="required" /><br><br>
+        <input type="number" name="Skewness" placeholder="Skewness Number" required="required" /><br><br>
+		<input type="number" name="Curtosis" placeholder="Curtosis Number" required="required" /><br><br>
+        <input type="number" name="Entropy" placeholder="Entropy Number" required="required" /><br><br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button><br>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_Class }}
+
+ </div>
+
+
+</body>
+</html>
